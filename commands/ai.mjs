@@ -19,7 +19,7 @@ export default {
 		await interaction.deferReply({ ephemeral: false });
 		async function openAI() {
 			const response = await openai.chat.completions.create({
-				model: 'gpt-4-turbo-2024-04-09',
+				model: 'gpt-4-turbo',
 				messages: [
 					{ 'role': 'system', 'content': "You will give complete responses with code only" },
 					{ 'role': 'user', 'content': interaction.options.getString('prompt') }
