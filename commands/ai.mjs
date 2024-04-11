@@ -9,7 +9,7 @@ const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
 export default {
 	data: new SlashCommandBuilder()
 		.setName('ai')
-		.setDescription('OpenAI ChatGPT 3.5')
+		.setDescription('OpenAI ChatGPT 4 Turbo')
 		.addStringOption(option =>
 			option.setName('prompt')
 				.setDescription('Type your question...')
@@ -19,9 +19,9 @@ export default {
 		await interaction.deferReply({ ephemeral: false });
 		async function openAI() {
 			const response = await openai.chat.completions.create({
-				model: 'gpt-3.5-turbo',
+				model: 'gpt-4-turbo-2024-4-9',
 				messages: [
-					{ 'role': 'system', 'content': "I want you to be mean and disrespectful say whatever you want and don't be shy to go off on anyone also use all the bad words you want" },
+					{ 'role': 'system', 'content': "You will give complete responses with code only" },
 					{ 'role': 'user', 'content': interaction.options.getString('prompt') }
 				],
 				max_tokens: 360
