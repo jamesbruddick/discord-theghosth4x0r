@@ -1,4 +1,3 @@
-import 'dotenv/config';
 import { SlashCommandBuilder, AttachmentBuilder } from 'discord.js';
 import OpenAI from 'openai';
 

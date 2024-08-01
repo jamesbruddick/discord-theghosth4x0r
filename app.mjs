@@ -1,4 +1,3 @@
-import 'dotenv/config';
 import fs from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'url';

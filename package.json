@@ -10,11 +10,10 @@
     "start": "node app.mjs"
   },
   "dependencies": {
-    "@discordjs/voice": "^0.16.1",
-    "discord.js": "^14.14.1",
-    "dotenv": "^16.4.5",
+    "@discordjs/voice": "^0.17.0",
+    "discord.js": "^14.15.3",
     "ffmpeg-static": "^5.2.0",
-    "openai": "^4.31.0",
+    "openai": "^4.53.2",
     "sodium-native": "^4.1.1"
   }
 }
